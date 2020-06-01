@@ -8,12 +8,14 @@ For example, given the array  there are  elements, two positive, two negative an
  */
 
 
-const plusMinus = (arr) => {
+
+
+ const plusMinus = (arr) => {
     let positive = []
     let negative = []
     let zero = []
-    const length = arr.length
 
+    const length = arr.length
     for(let i = 0; i < length; i++ ) {
         if(arr[i] < 0) {
             negative.push(arr[i])
@@ -25,11 +27,9 @@ const plusMinus = (arr) => {
             return 
         }
     }
-
     console.log(positive.length/length)
     console.log( negative.length/length)
     console.log( zero.length/length)
-
     return 
 }
 
