@@ -5,7 +5,6 @@ function diagonalDifference(arr) {
     for (var i = 0, j = length - 1; i < length; i++, j--) {
             leftDiag += arr[i][i]
             rightDiag += arr[i][j]  
-
     }
 
     console.log(leftDiag)
